@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <mapping-file>workshop/entities/CarPartsEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/CarPartsCategoriesEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/CarsEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/CustomersEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/DepartmentsEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/EmployeeEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/EmployeeRepairsEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/MotorsEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/RepairsEntity.xml</mapping-file>
+        <mapping-file>workshop/entities/UsedCarPartsEntity.xml</mapping-file>
+        <class>workshop.entities.CarPartsEntity</class>
+        <class>workshop.entities.CarPartsCategoriesEntity</class>
+        <class>workshop.entities.CarsEntity</class>
+        <class>workshop.entities.CustomersEntity</class>
+        <class>workshop.entities.DepartmentsEntity</class>
+        <class>workshop.entities.EmployeeEntity</class>
+        <class>workshop.entities.EmployeeRepairsEntity</class>
+        <class>workshop.entities.MotorsEntity</class>
+        <class>workshop.entities.RepairsEntity</class>
+        <class>workshop.entities.UsedCarPartsEntity</class>
+
+    </persistence-unit>
+</persistence>

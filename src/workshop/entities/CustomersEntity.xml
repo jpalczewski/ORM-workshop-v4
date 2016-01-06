@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="workshop.entities.CustomersEntity">
+        <table name="CUSTOMERS" schema="JPALCZEW" catalog=""/>
+        <attributes>
+            <id name="customerId">
+                <column name="CUSTOMER_ID" precision="2147483646"/>
+            </id>
+            <basic name="firstName">
+                <column name="FIRST_NAME" length="20"/>
+            </basic>
+            <basic name="lastName">
+                <column name="LAST_NAME" length="40"/>
+            </basic>
+            <basic name="phoneNumber">
+                <column name="PHONE_NUMBER" nullable="false" length="13"/>
+            </basic>
+            <basic name="address">
+                <column name="ADDRESS" nullable="false" length="50"/>
+            </basic>
+            <basic name="postalCode">
+                <column name="POSTAL_CODE" nullable="false" length="6"/>
+            </basic>
+            <basic name="city">
+                <column name="CITY" nullable="false" length="25"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

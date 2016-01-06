@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="workshop.entities.RepairsEntity">
+        <table name="REPAIRS" schema="JPALCZEW" catalog=""/>
+        <attributes>
+            <id name="repairId">
+                <column name="REPAIR_ID" precision="2147483646"/>
+            </id>
+            <basic name="carId">
+                <column name="CAR_ID" nullable="false" precision="2147483646"/>
+            </basic>
+            <basic name="repairDate">
+                <column name="REPAIR_DATE" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

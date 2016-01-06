@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="workshop.entities.DepartmentsEntity">
+        <table name="DEPARTMENTS" schema="JPALCZEW" catalog=""/>
+        <attributes>
+            <id name="depId">
+                <column name="DEP_ID" precision="4"/>
+            </id>
+            <basic name="depName">
+                <column name="DEP_NAME" nullable="false" length="30"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

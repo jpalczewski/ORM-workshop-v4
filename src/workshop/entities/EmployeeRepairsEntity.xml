@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="workshop.entities.EmployeeRepairsEntity">
+        <table name="EMPLOYEE_REPAIRS" schema="JPALCZEW" catalog=""/>
+        <id-class class="workshop.entities.EmployeeRepairsEntityPK"/>
+        <attributes>
+            <id name="repairId">
+                <column name="REPAIR_ID" precision="2147483646"/>
+            </id>
+            <id name="employeeId">
+                <column name="EMPLOYEE_ID" precision="2147483646"/>
+            </id>
+            <basic name="billedHours">
+                <column name="BILLED_HOURS" precision="5"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

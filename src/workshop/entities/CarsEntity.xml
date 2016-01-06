@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="workshop.entities.CarsEntity">
+        <table name="CARS" schema="JPALCZEW" catalog=""/>
+        <attributes>
+            <id name="carId">
+                <column name="CAR_ID" precision="2147483646"/>
+            </id>
+            <basic name="ownerId">
+                <column name="OWNER_ID" precision="2147483646"/>
+            </basic>
+            <basic name="motorId">
+                <column name="MOTOR_ID" precision="2147483646"/>
+            </basic>
+            <basic name="brand">
+                <column name="BRAND" nullable="false" length="20"/>
+            </basic>
+            <basic name="model">
+                <column name="MODEL" nullable="false" length="20"/>
+            </basic>
+            <basic name="productionYear">
+                <column name="PRODUCTION_YEAR" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

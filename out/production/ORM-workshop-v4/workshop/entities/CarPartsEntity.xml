@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="workshop.entities.CarPartsEntity">
+        <table name="CAR_PARTS" schema="JPALCZEW" catalog=""/>
+        <attributes>
+            <id name="carPartId">
+                <column name="CAR_PART_ID" precision="2147483646"/>
+            </id>
+            <basic name="categoryId">
+                <column name="CATEGORY_ID" precision="2147483646"/>
+            </basic>
+            <basic name="vendorPrice">
+                <column name="VENDOR_PRICE" precision="2"/>
+            </basic>
+            <basic name="partDesc">
+                <column name="PART_DESC" nullable="false" length="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
